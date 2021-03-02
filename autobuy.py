@@ -60,6 +60,5 @@ while not buyButton:
         notify.send('Há PS5!!!')
 
         buyButton = True
-
         
         
