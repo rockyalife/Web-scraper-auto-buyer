@@ -3,7 +3,7 @@ from selenium import webdriver
 from notify_run import Notify
 
 # Chrome
-browser = webdriver.Chrome(executable_path=r'G:\Python\Web scraper auto-buyer\chromedriver\\chromedriver.exe')
+browser = webdriver.Chrome()
 
 # Worten
 # Login
@@ -40,7 +40,7 @@ while not buyButton:
         #Button isnt open restart script
         print("Button isnt ready yet")
 
-        #Refresh page after a delay
+        #Refresh page after sleep
         time.sleep(1)
         browser.refresh()
 
@@ -56,8 +56,8 @@ while not buyButton:
         StartOrder.click()
 
         #Mobile Notification config at https://notify.run/
-        notify = Notify()
-        notify.send('Há PS5!!!')
+        # notify = Notify()
+        # notify.send('Há PS5!!!')
 
         buyButton = True
         
