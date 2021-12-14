@@ -10,8 +10,8 @@ browser = webdriver.Chrome()
 browser.get("https://www.worten.pt/cliente/conta#/myLogin")
 
 #Login info
-browser.find_element_by_id("email").send_keys("rockyalife@gmail.com")
-browser.find_element_by_id("pass").send_keys("4121994")
+browser.find_element_by_id("email").send_keys("INSERT_EMAIL")
+browser.find_element_by_id("pass").send_keys("PASSWORD")
 
 time.sleep(5)
 
@@ -25,9 +25,8 @@ enterLogin.click()
 
 time.sleep(2)
 
-browser.get("https://www.worten.pt/gaming/playstation/consolas/ps5/consola-ps5-825gb-7196053")
-
-
+browser.get("PRODUCT_LINK")
+#EXAMPLE
 #browser.get("https://www.worten.pt/gaming/nintendo-switch/consolas-nintendo-switch/consola-nintendo-switch-lite-animal-crossing-32-gb-turquesa-7302248")
 
 buyButton = False
@@ -57,7 +56,7 @@ while not buyButton:
 
         #Mobile Notification config at https://notify.run/
         # notify = Notify()
-        # notify.send('Há PS5!!!')
+        # notify.send('PS5!!!')
 
         buyButton = True
         
